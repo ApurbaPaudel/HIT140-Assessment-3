@@ -134,6 +134,12 @@ model_df[
 ].head()
 
 
+# ### Data Source
+# 
+# The analysis used the FIFA World Cup 2026 match-prediction feature and target datasets. The feature dataset contains pre-match explanatory variables, while the target dataset contains observed match outcomes.
+# 
+# The tournament contained 104 matches. Match results were cross-checked against the official FIFA World Cup 2026 fixtures and results page to support the accuracy of the response data used in this analysis.
+
 # In[20]:
 
 
@@ -1838,12 +1844,6 @@ targets_check[
 # Some variables, including previous_goals_scored_difference and previous_shots_on_target_difference, had negative coefficients despite having positive simple correlations with goal difference. These coefficients should not be interpreted in isolation because multiple regression estimates each relationship while holding the other predictors constant. Several football-performance variables are correlated with one another, which can affect the direction and magnitude of individual coefficients.
 # 
 # Coefficient sizes should also not be directly compared as measures of importance because the predictors are measured on very different scales. For example, squad value is measured in euros while host advantage is represented by small indicator values.
-
-# In[ ]:
-
-
-
-
 
 # In[ ]:
 
