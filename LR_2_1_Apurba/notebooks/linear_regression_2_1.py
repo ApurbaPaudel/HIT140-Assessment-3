@@ -35,13 +35,13 @@ features_df.shape
 features_df.columns.tolist()
 
 
-# In[6]:
+# In[152]:
 
 
 targets_df = pd.read_csv('/Users/apuu/Desktop/Assessment3_LinearRegression_2_1/data/match_prediction_targets_y.csv')
 
 
-# In[7]:
+# In[153]:
 
 
 targets_df.head()
@@ -1406,6 +1406,16 @@ plt.savefig(
 plt.show()
 
 
+# ### Residual Diagnostic Interpretation
+# 
+# The residuals were distributed on both sides of zero, but they were not completely random across the range of predicted goal differences.
+# 
+# Several negative predicted goal differences had positive residuals, while some of the largest positive predicted goal differences had strongly negative residuals. This suggests that the model may sometimes produce predictions that are too extreme, particularly for matches predicted to have large winning margins.
+# 
+# There was no obvious strong funnel-shaped pattern, although several relatively large residuals were present. Since the test set contained only 21 matches, the residual pattern should be interpreted cautiously.
+# 
+# Overall, the diagnostic plot suggests that the multiple linear regression model captures some of the relationship in the data but does not fully explain the variation in unseen match outcomes. This is consistent with the relatively low test R² of 0.079.
+
 # In[114]:
 
 
@@ -1427,6 +1437,16 @@ plt.savefig(
 
 plt.show()
 
+
+# ### LR 2.1 Summary
+# 
+# A multiple linear regression model was developed to predict the goal difference between two opposing teams using 104 FIFA World Cup 2026 matches and eight pre-match explanatory variables.
+# 
+# Exploratory data analysis, correlation analysis, feature comparison and IQR-based outlier assessment were used to refine the predictor set. The current baseline model achieved a test MAE of 1.430 goals, RMSE of 1.839 goals and R² of 0.079.
+# 
+# The model performed better than the earlier feature combinations tested, but the relatively low test R² and residual patterns indicate that substantial variation in match goal difference remains unexplained. Therefore, the model should be treated as a baseline rather than a highly accurate predictor.
+# 
+# The final group analysis should compare this baseline with alternative modelling approaches and confirm that the LR 2.1 and LR 2.2 models share no more than four explanatory variables.
 
 # In[115]:
 
@@ -1807,23 +1827,17 @@ targets_check[
 # 
 # The difference between training and test performance indicates that the model generalises less effectively to unseen matches than it fits the training data. Therefore, these results should be interpreted cautiously and the model should be compared with alternative modelling approaches during the group's final model-comparison stage.
 
-# In[ ]:
-
-
-get_ipython().system('jupyter nbconvert --to script linear_regression_2_1.ipynb')
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+# ### Interpretation of Regression Coefficients
+# 
+# The regression coefficients represent the expected change in predicted goal difference when one explanatory variable increases by one unit while the other variables are held constant.
+# 
+# The largest clearly interpretable positive coefficient was for host_advantage (approximately 0.757), suggesting that host status was associated with a higher predicted goal difference after accounting for the other variables. defensive_advantage also had a positive coefficient of approximately 0.309.
+# 
+# The coefficient for elo_difference was positive (approximately 0.005 per Elo point), indicating that teams with a higher Elo rating relative to their opponent tended to have a higher predicted goal difference.
+# 
+# Some variables, including previous_goals_scored_difference and previous_shots_on_target_difference, had negative coefficients despite having positive simple correlations with goal difference. These coefficients should not be interpreted in isolation because multiple regression estimates each relationship while holding the other predictors constant. Several football-performance variables are correlated with one another, which can affect the direction and magnitude of individual coefficients.
+# 
+# Coefficient sizes should also not be directly compared as measures of importance because the predictors are measured on very different scales. For example, squad value is measured in euros while host advantage is represented by small indicator values.
 
 # In[ ]:
 
