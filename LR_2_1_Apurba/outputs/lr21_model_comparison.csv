@@ -1,0 +1,5 @@
+Model,Training_R2,Adjusted_Training_R2,Test_MAE,Test_RMSE,Test_R2,Test_MSE
+Original,0.557,0.509,1.595,2.021,-0.112,4.084
+Refined,0.555,0.507,1.529,1.968,-0.054,3.873
+Candidate 3,0.553,0.504,1.43,1.839,0.079,3.382
+Candidate 4,0.599,0.556,1.641,2.064,-0.159,4.259
