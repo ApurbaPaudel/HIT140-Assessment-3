@@ -1,0 +1,9 @@
+Variable,VIF
+team_fifa_rank,1.2712160249060147
+opponent_fifa_rank,1.070828152333465
+team_rest_days,1.2936653592877394
+venue_elevation_meters,1.0205935819557383
+team_prev_avg_corners,1.2425834122268458
+team_prev_avg_fouls,1.1841996769546153
+team_prev_avg_offsides,1.093963419630321
+referee_avg_cards,1.0370035231722896

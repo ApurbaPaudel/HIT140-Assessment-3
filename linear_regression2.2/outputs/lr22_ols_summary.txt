@@ -1,0 +1,34 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           goals_scored   R-squared:                       0.245
+Model:                            OLS   Adj. R-squared:                  0.206
+Method:                 Least Squares   F-statistic:                     7.545
+Date:                Tue, 13 Oct 2026   Prob (F-statistic):           1.67e-07
+Time:                        13:49:20   Log-Likelihood:                -261.21
+No. Observations:                 166   AIC:                             540.4
+Df Residuals:                     157   BIC:                             568.4
+Df Model:                           8                                         
+Covariance Type:              cluster                                         
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                      1.4919      0.801      1.862      0.063      -0.078       3.062
+team_fifa_rank            -0.0191      0.005     -4.208      0.000      -0.028      -0.010
+opponent_fifa_rank         0.0197      0.005      3.987      0.000       0.010       0.029
+team_rest_days             0.0516      0.051      1.021      0.307      -0.047       0.151
+venue_elevation_meters  -3.18e-05      0.000     -0.237      0.813      -0.000       0.000
+team_prev_avg_corners      0.0046      0.043      0.107      0.915      -0.080       0.089
+team_prev_avg_fouls       -0.0491      0.045     -1.085      0.278      -0.138       0.040
+team_prev_avg_offsides    -0.0990      0.144     -0.689      0.491      -0.381       0.183
+referee_avg_cards          0.0828      0.141      0.586      0.558      -0.194       0.360
+==============================================================================
+Omnibus:                       25.012   Durbin-Watson:                   1.890
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               34.009
+Skew:                           0.876   Prob(JB):                     4.12e-08
+Kurtosis:                       4.359   Cond. No.                     5.41e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 5.41e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

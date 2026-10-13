@@ -1,0 +1,9 @@
+Predictor,Coefficient
+referee_avg_cards,0.08284070405209211
+team_rest_days,0.05160134524921795
+opponent_fifa_rank,0.01968068233884404
+team_prev_avg_corners,0.004608166088679241
+venue_elevation_meters,-3.179599166980982e-05
+team_fifa_rank,-0.01910423153634224
+team_prev_avg_fouls,-0.04914515332684368
+team_prev_avg_offsides,-0.09897819898441408
