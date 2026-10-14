@@ -1,0 +1,9 @@
+FIFA World Cup 2026 official fixtures/results:
+https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums
+
+Pre-match feature and target dataset:
+https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset
+
+Files used:
+match_prediction_features_X.csv
+match_prediction_targets_y.csv

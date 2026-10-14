@@ -1,0 +1,17 @@
+variable,LR 2.1,LR 2.2
+defensive_advantage,0.82,
+elo_difference,1.0,
+host_advantage,0.9,
+opponent_fifa_rank,,1.0
+previous_goals_scored_difference,0.7,
+previous_possession_difference,0.76,
+previous_shots_on_target_difference,0.46,
+referee_avg_cards,,0.28
+squad_experience_difference,0.72,
+squad_value_difference,0.92,
+team_fifa_rank,,1.0
+team_prev_avg_corners,,0.54
+team_prev_avg_fouls,,0.7
+team_prev_avg_offsides,,0.7
+team_rest_days,,0.2
+venue_elevation_meters,,0.16

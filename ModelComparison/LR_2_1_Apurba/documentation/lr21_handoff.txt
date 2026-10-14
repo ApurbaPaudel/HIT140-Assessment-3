@@ -1,0 +1,39 @@
+Linear Regression 2.1 - Student 1 Handoff
+
+Response variable:
+goal_difference = home_score - away_score
+
+Dataset:
+104 matches
+83 training matches
+21 test matches
+No missing values
+No duplicate match IDs
+
+Current working 8 explanatory variables:
+1. elo_difference
+2. squad_value_difference
+3. squad_experience_difference
+4. previous_possession_difference
+5. previous_goals_scored_difference
+6. defensive_advantage
+7. host_advantage
+8. previous_shots_on_target_difference
+
+Current baseline model:
+Multiple Linear Regression
+
+Performance:
+Training R2 = 0.553
+Adjusted Training R2 = 0.504
+Test MAE = 1.430
+Test MSE = 3.382
+Test RMSE = 1.839
+Test R2 = 0.079
+
+Important:
+These 8 variables must later be checked against LR 2.2 so that no more than
+4 explanatory variables are shared between the two regression tasks.
+
+The baseline model should be compared with the group's alternative modelling
+approaches during final model comparison.

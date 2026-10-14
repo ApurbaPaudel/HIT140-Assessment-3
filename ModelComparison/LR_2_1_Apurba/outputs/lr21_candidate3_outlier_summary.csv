@@ -1,0 +1,8 @@
+Variable,Lower_Bound,Upper_Bound,Outlier_Count
+elo_difference,-620.62,734.38,0
+squad_value_difference,-1153614295.0,1476114873.0,6
+squad_experience_difference,-660.38,822.62,2
+previous_possession_difference,-19.0,29.0,9
+previous_goals_scored_difference,-2.46,2.77,8
+defensive_advantage,-1.55,2.03,11
+previous_shots_on_target_difference,-4.67,6.0,7

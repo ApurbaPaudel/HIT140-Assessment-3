@@ -1,0 +1,10 @@
+Variable,Coefficient
+Intercept,0.028421157763939164
+elo_difference,0.004991661314425518
+squad_value_difference,4.196987490008643e-10
+squad_experience_difference,-0.00040473914398573695
+previous_possession_difference,0.014705575103682374
+previous_goals_scored_difference,-0.2098659635895801
+defensive_advantage,0.308982666767906
+host_advantage,0.7567490918603442
+previous_shots_on_target_difference,-0.04878733273983323

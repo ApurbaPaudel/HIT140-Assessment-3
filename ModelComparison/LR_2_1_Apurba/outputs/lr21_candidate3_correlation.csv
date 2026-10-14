@@ -1,0 +1,10 @@
+,elo_difference,squad_value_difference,squad_experience_difference,previous_possession_difference,previous_goals_scored_difference,defensive_advantage,host_advantage,previous_shots_on_target_difference,goal_difference
+elo_difference,1.0,0.79,0.26,0.57,0.36,0.33,0.02,0.56,0.65
+squad_value_difference,0.79,1.0,0.01,0.51,0.3,0.33,-0.03,0.54,0.57
+squad_experience_difference,0.26,0.01,1.0,0.15,0.18,0.07,0.2,0.1,0.09
+previous_possession_difference,0.57,0.51,0.15,1.0,0.34,0.26,0.08,0.64,0.44
+previous_goals_scored_difference,0.36,0.3,0.18,0.34,1.0,0.01,0.18,0.62,0.14
+defensive_advantage,0.33,0.33,0.07,0.26,0.01,1.0,0.08,0.15,0.31
+host_advantage,0.02,-0.03,0.2,0.08,0.18,0.08,1.0,-0.11,0.16
+previous_shots_on_target_difference,0.56,0.54,0.1,0.64,0.62,0.15,-0.11,1.0,0.31
+goal_difference,0.65,0.57,0.09,0.44,0.14,0.31,0.16,0.31,1.0
